@@ -17,7 +17,7 @@ var config = {
 // Sass to css compilation
 gulp.task('sass', function () {
     return gulp.src(config.sassPath + '/bootstrap.hcs.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(rename('bootstrap.css'))
         .pipe(gulp.dest('./dist/'))
@@ -29,8 +29,8 @@ gulp.task('sass', function () {
 });
 
 // Watcher
-gulp.task('watch', function () {
-    gulp.watch(['./sass/**/*.scss', './theme/**/*.scss'], ['clean', 'sass']);
+gulp.task('watch', ['default'], function () {
+    gulp.watch(['./sass/**/*.scss', './theme/**/*.scss', './bootstrap.hcs.scss'], ['clean', 'sass']);
 });
 
 // Clean

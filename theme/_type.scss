@@ -1,0 +1,31 @@
+// Typography =================================================================
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" !default;
+@import url($web-font-path);
+
+body {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .1px;
+}
+
+p {
+    margin: 0 0 1em;
+    color:$gray-base;
+}
+
+input,
+button {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .1px;
+}
+
+a {
+    @include transition(all 0.2s);
+}
+
+h1, .h1 { font-weight: $font-weight-h1; }
+h2, .h2 { font-weight: $font-weight-h2; }
+h3, .h3 { font-weight: $font-weight-h3; }
+h4, .h4 { font-weight: $font-weight-h4; }
+h5, .h5 { font-weight: $font-weight-h5; }
+h6, .h6 { font-weight: $font-weight-h6; }

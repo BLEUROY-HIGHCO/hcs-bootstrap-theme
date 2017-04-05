@@ -1,0 +1,22 @@
+{
+  "name": "highco_bootstrap",
+  "description": "Highco bootstrap theme",
+  "main": "gulpfile.js",
+  "authors": [
+    "Arnaud <aboubli@yahoo.fr>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/BLEUROY-HIGHCO/hcs-bootstrap-theme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "bootstrap": "^3.3.7"
+  }
+}
