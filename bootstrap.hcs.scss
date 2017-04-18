@@ -1,6 +1,10 @@
 @import "./theme/variables";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "./theme/buttons";
-@import "./theme/type";
-@import "./theme/paper";
-
+@import "./theme/type"; // typography
+@import "./theme/navbar";
+@import "./theme/tables";
+@import "./theme/forms";
+@import "./theme/navs";
+@import "./theme/indicators";
+@import "./theme/containers";
