@@ -1,5 +1,17 @@
 // Helpers =================================================================
 
+.bg-default {
+    background-color: $brand-default;
+}
 .bg-info {
     background-color: $brand-info;
+}
+.bg-success {
+    background-color: $brand-success;
+}
+.bg-warning {
+    background-color: $brand-warning;
+}
+.bg-danger {
+    background-color: $brand-danger;
 }
