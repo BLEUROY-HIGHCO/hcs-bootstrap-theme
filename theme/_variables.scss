@@ -8,24 +8,22 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #3b3837 !default;
+$gray-base:              #33302f !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              #242221 !default;
-$gray:                   #9b9b9b !default;
+$gray:                   #33302f !default;
 $gray-light:             #d1d1d1 !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:           #c22d16 !default;
-$brand-secondary:         $gray-base !default;
-$brand-default:           $gray-light !default;
-$brand-success:           #5cb85c !default;
-$brand-info:              #5bc0de !default;
-$brand-warning:           #f0ad4e !default;
-$brand-danger:            #d9534f !default;
-$brand-hover-primary:     #9b2412 !default;
-$brand-primary-active:    #9b2412 !default;
-$brand-hover-secondary:   #33302f !default;
-$brand-secondary-active:  $gray-dark !default;
+$brand-default:           #3b3837 !default;
+$brand-success:           #52ADC2 !default;
+$brand-info:              #59429b !default;
+$brand-warning:           #FFB642 !default;
+$brand-danger:            #741b0d !default;
+
+
+
 
 
 
@@ -34,14 +32,14 @@ $brand-secondary-active:  $gray-dark !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #f4f5f6 !default;
+$body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $brand-hover-primary !default;
+$link-hover-color:      $brand-default !default;
 //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -83,7 +81,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          #444 !default;
+$headings-color:          $text-color !default;
 
 
 //== Iconography
@@ -166,10 +164,6 @@ $btn-default-border:             transparent !default;
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             transparent !default;
-
-$btn-secondary-color:             #fff !default;
-$btn-secondary-bg:                $brand-secondary !default;
-$btn-secondary-border:            darken($btn-secondary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
@@ -414,7 +408,7 @@ $navbar-inverse-bg:                         $brand-primary !default;
 $navbar-inverse-border:                     transparent !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 lighten($brand-primary, 30%) !default;
+$navbar-inverse-link-color:                 #fff !default;
 $navbar-inverse-link-hover-color:           #fff !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
@@ -731,9 +725,9 @@ $panel-border-radius:         $border-radius-base !default;
 $panel-inner-border:          #ddd !default;
 $panel-footer-bg:             #f5f5f5 !default;
 
-$panel-default-text:          $gray-dark !default;
+$panel-default-text:          #fff !default;
 $panel-default-border:        #ddd !default;
-$panel-default-heading-bg:    #f5f5f5 !default;
+$panel-default-heading-bg:    $brand-default !default;
 
 $panel-primary-text:          #fff !default;
 $panel-primary-border:        $brand-primary !default;
@@ -790,7 +784,7 @@ $well-border:                 transparent !default;
 $badge-color:                 #fff !default;
 //** Linked badge text color on hover
 $badge-link-hover-color:      #fff !default;
-$badge-bg:                    $gray-light !default;
+$badge-bg:                    $brand-info !default;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color !default;
@@ -877,7 +871,7 @@ $blockquote-small-color:      $gray-light !default;
 //** Blockquote font size
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
-$blockquote-border-color:     $gray-lighter !default;
+$blockquote-border-color:     $gray-light !default;
 //** Page header border color
 $page-header-border-color:    $gray-lighter !default;
 //** Width of horizontal description list titles

@@ -46,13 +46,10 @@
     }
 }
 
-.btn-secondary {
-    @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
-}
+
 
 @include btn(default,$btn-default-bg,$btn-default-color);
 @include btn(primary,$btn-primary-bg,$btn-primary-color);
-@include btn(secondary,$btn-secondary-bg,$btn-secondary-color);
 @include btn(success,$btn-success-bg,$btn-success-color);
 @include btn(info,$btn-info-bg,$btn-info-color);
 @include btn(warning,$btn-warning-bg,$btn-warning-color);
@@ -125,14 +122,14 @@
     }
 }
 .btn-lg {
-    min-width: 280px;
+    padding: 10px 55px;
     line-height: 40px;
 }
 .btn-sm {
-    min-width: 220px;
+    padding: 3px 45px;
     line-height: 40px;
 }
 .btn-xs {
-    min-width: 100px;
+    padding: 1px 14px;
     line-height: 25px;
 }
