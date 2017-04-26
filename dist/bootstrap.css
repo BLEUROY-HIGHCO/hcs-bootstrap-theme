@@ -6585,3 +6585,6 @@ input[type="checkbox"],
 
 .carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6 {
   color: inherit; }
+
+.bg-info {
+  background-color: #59429b; }
