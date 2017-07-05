@@ -1,3 +1,12 @@
+// Comment / Uncomment to activate bootstrap 4
+/**
+@import "./theme/v4/variables";
+@import "./bootstrap-sass-v4/bootstrap";
+@import "./theme/v4/bootswatch";
+/**/
+
+// Comment / Uncomment to activate bootstrap 3
+/**/
 @import "./theme/variables";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "./theme/buttons";
@@ -9,3 +18,4 @@
 @import "./theme/indicators";
 @import "./theme/containers";
 @import "./theme/helpers";
+/**/
